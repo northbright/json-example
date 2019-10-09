@@ -50,6 +50,7 @@ func Decode() {
 	// Create a JSON decoder using bytes.Buffer(io.Reader)
 	dec := json.NewDecoder(&buf)
 
+	// Read and decode from input stream until io.EOF.
 	for {
 		// Use empty interface to store decoded value.
 		var v interface{}
